@@ -74,17 +74,41 @@
 
 # 08 prime number  checker
 
-userNumber = int(input('Enter number to check: '))
+# userNumber = int(input('Enter number to check: '))
 
-is_Prime = True
+# is_Prime = True
 
-if userNumber > 1:
-    for num in range(2,userNumber):
-        if (userNumber % 2) == 0:
-            is_Prime = False
-            break
+# if userNumber > 1:
+#     for num in range(2,userNumber):
+#         if (userNumber % 2) == 0:
+#             is_Prime = False
+#             break
 
-if is_Prime == True:
-    print(f'Your entered number {userNumber} is prime')
-else:
-    print(f'Your entered number {userNumber} is not prime')
+# if is_Prime == True:
+#     print(f'Your entered number {userNumber} is prime')
+# else:
+#     print(f'Your entered number {userNumber} is not prime')
+
+# 09 dublicate elemnent checker
+
+# items = ['apple','bannana','orange','apple','mango','mango']
+# uniqueItem = set()
+# for i in items:
+#     if i in uniqueItem:
+#         print('dublicate', i)
+#         break
+#     uniqueItem.add(i)
+
+
+# 10 wait time
+import time
+
+max_attempt = 5
+wait_time = 1
+atempts = 0
+
+while atempts < max_attempt:
+    print(f'Attempt is {atempts + 1 } and wait time',wait_time)
+    time.sleep(wait_time)
+    wait_time *=2
+    atempts+=1
